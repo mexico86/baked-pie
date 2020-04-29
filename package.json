@@ -1,0 +1,32 @@
+{
+  "name": "prebaked-pie",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "clean": "rm prebaked-pie-lambda.zip",
+    "package": "git archive -v -o prebaked-pie.zip --format=zip HEAD",
+    "package-lambda": "npm run clean; zip -r prebaked-pie-lambda.zip ./node_modules; zip -ruj prebaked-pie-lambda ./src"
+  },
+  "keywords": [
+    "Blackbirds",
+    "Baked",
+    "In a Pie"
+  ],
+  "author": "systemco86/mx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mexico86/prebaked-pie.git"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.8",
+    "express": "^4.17.1",
+    "got": "^11.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
