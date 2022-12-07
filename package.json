@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "aws-serverless-express": "^3.3.8",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "got": "^11.1.0"
   },
   "devDependencies": {
